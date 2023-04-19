@@ -2,11 +2,11 @@
 module.exports = {
   darkMode: 'class',
   prefix: 'tw-',
-  // purge: [
-  //   "./src/pages/**/*.{js,ts,jsx,tsx}",
-  //   "./src/components/**/*.{js,ts,jsx,tsx}",
-  //   "./src/layouts/**/*.{js,ts,jsx,tsx}",
-  // ],
+  purge: [
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/layouts/**/*.{js,ts,jsx,tsx}",
+  ],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
@@ -34,8 +34,8 @@ module.exports = {
       'secondary': '#FFCE00',
     }),
     fontFamily: {
+      'Anton': ['Anton'],
       'BebasNeue': ['Bebas Neue'],
-      'LibreBarcode39': ['Libre Barcode 39'],
       'Righteous': ['Righteous'],
       'Poppins': ['Poppins'],
       'sans': ['ui-sans-serif', 'system-ui'],
