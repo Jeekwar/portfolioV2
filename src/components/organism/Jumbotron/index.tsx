@@ -18,12 +18,13 @@ const Jumbotron = (props) => {
       </h5>
 
       <div className="jumbotron tw-top-14 tw-flex tw-justify-start tw-w-full tw-px-12">
-        <p className={`tw-font-[''] tw-text-lg`}>
-          With years of experience, I specialize in creating dynamic and
-          user-friendly web solutions. <br /> I excel in collaborating with
-          product managers and UI/UX designers <br /> to deliver projects that
-          meet requirements and optimize system performance. <br /> Let's build
-          something amazing together!
+        <p className={` tw-text-lg`}>
+          {`
+            With years of experience, I specialize in creating dynamic and
+          user-friendly web solutions.  I excel in collaborating with
+          product managers and UI/UX designers  to deliver projects that
+          meet requirements and optimize system performance.  Let's build
+          something amazing together!`}
         </p>
       </div>
     </div>
