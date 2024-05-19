@@ -20,10 +20,10 @@ const Jumbotron = (props) => {
       <div className="jumbotron tw-top-14 tw-flex tw-justify-start tw-w-full tw-px-12">
         <p className={` tw-text-lg`}>
           {`
-           With years of experience, I specialize in creating dynamic and
-          user-friendly web solutions. I excel in collaborating with
-          product managers and UI/UX designers to deliver projects that
-          meet requirements and optimize system performance. Let's build
+            With years of experience, I specialize in creating dynamic and
+          user-friendly web solutions.  I excel in collaborating with
+          product managers and UI/UX designers  to deliver projects that
+          meet requirements and optimize system performance.  Let's build
           something amazing together!`}
         </p>
       </div>
