@@ -1,11 +1,11 @@
 import { Bebas_Neue, Anton } from "next/font/google";
 
-const BebasNeue = Bebas_Neue({ subsets: ["latin"], weight: "400" });
+// const BebasNeue = Bebas_Neue({ subsets: ["latin"], weight: "400" });
 
-const Jumbotron = (props: { className: string }) => {
+const Jumbotron = () => {
   return (
     <div
-      className={`${props.className} tw-h-screen tw-flex tw-flex-col tw-gap-24 tw-items-center tw-justify-center`}
+      className={`tw-h-screen tw-flex tw-flex-col tw-gap-24 tw-items-center tw-justify-center`}
     >
       {/* <p
         className={`${BebasNeue.className} jumbotron tw-opacity-0 tw-relative tw-top-14`}
