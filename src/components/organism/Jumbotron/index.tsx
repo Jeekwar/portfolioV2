@@ -63,7 +63,7 @@ const Jumbotron = () => {
             className={`${BarlowCondensed.className} tw-relative tw-overflow-hidden`}
           >
             <p className="desc-jumbotron2 tw-top-14 tw-text-white">
-              Let's build something amazing together!
+              {"Let's build something amazing together!"}
             </p>
           </div>
           {/* <p className="tw-text-white tw-relative">
