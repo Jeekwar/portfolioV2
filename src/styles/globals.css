@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -76,20 +78,21 @@
 /* custom  */
 /* ... ....  ... */
 
-a,
-p,
-h5 {
+.navbar-wrapper,
+.jumbotron {
   color: white;
   text-decoration: none;
 }
 
-.jumbotron {
+.jumbotron,
+.desc-jumbotron1,
+.desc-jumbotron2 {
   position: relative;
   opacity: 0;
 }
 
 h5 {
-  font-size: 12vw;
+  font-size: 16vw;
 }
 
 .navbar-wrapper {
@@ -103,7 +106,7 @@ h5 {
 }
 
 h1 {
-  color: yellow;
+  color: white;
   font-size: 20vw;
   transform: scale(1, -0);
   margin: auto;
@@ -120,17 +123,41 @@ h1 {
   font-family: "Anton", sans-serif;
 }
 
-.alfa-slab-one-regular {
-  font-family: "Alfa Slab One", serif;
-  font-weight: 400;
-  font-style: normal;
+.scroll-wrapper {
+  opacity: 0;
 }
-.karla-font-regular {
-  font-family: "Karla", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+
+.scroll-arrow1,
+.scroll-arrow2 {
+  position: relative;
+  top: -24px;
 }
+
+/* works section */
+
+.work-title {
+  transform: translateY(8rem);
+}
+
+.works-items {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: auto;
+  font-family: "Fjalla One";
+  color: antiquewhite;
+}
+.works-item {
+  color: #b3bfce;
+}
+
+/* img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale(85%);
+} */
 
 /* .jeekwar-wrapper {
   height: fit-content;

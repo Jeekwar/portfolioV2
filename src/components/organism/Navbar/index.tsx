@@ -30,7 +30,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="navbar-wrapper tw-px-2 lg:tw-px-8 tw-pt-4 tw-fixed tw-w-full ">
+    <div
+      className="navbar-wrapper tw-px-2 lg:tw-px-8 tw-pt-4 tw-fixed tw-w-full "
+      data-speed="clamp(0.0001)"
+    >
       <div
         className={`tw-flex tw-font-['Anton'] jeekwar-wrapper tw-w-['fit-content']`}
       >
