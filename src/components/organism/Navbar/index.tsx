@@ -15,7 +15,7 @@ const Navbar = () => {
   useEffect(() => {
     setInterval(() => {
       axios
-        .get("http://worldtimeapi.org/api/timezone/Asia/Jakarta", {
+        .get("https://worldtimeapi.org/api/timezone/Asia/Jakarta", {
           headers: {
             "Content-Type": "application/json",
           },
