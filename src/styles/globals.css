@@ -10,8 +10,7 @@
 
 @font-face {
   font-family: "Suisse Int'l";
-  src: url("../../public/assets/fonts/suisseintl-regular_0.otf")
-    format("opentype");
+  src: url("/assets/fonts/suisseintl-regular_0.otf") format("opentype");
   /* Add additional font formats if necessary */
   /* Specify the correct path to the font files */
 }
