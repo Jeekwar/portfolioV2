@@ -31,41 +31,46 @@ const Jumbotron = () => {
 
   return (
     <div
-      className={`tw-h-screen tw-flex tw-flex-col tw-gap-24 tw-items-center tw-justify-center`}
+      className={`tw-h-screen tw-flex tw-flex-col tw-items-center tw-gap-12 tw-justify-center`}
     >
-      <div className="tw-overflow-hidden tw-relative">
-        <div className={`tw-font-['Anton'] jumbotron tw-top-14 tw-flex`}>
-          <h5 className="w">W</h5>
-          <h5 className="e">E</h5>
-          <h5 className="b">B</h5>
-          <h5 className="strip">-</h5>
-          <h5 className="d">D</h5>
-          <h5 className="e2">E</h5>
-          <h5 className="v">V</h5>
+      <div className="tw-relative tw-overflow-hidden">
+        <div
+          className={`tw-font-['Anton'] jumbotron tw-flex tw-text-[#242424]`}
+        >
+          <h5 className="w big-tag">W</h5>
+          <h5 className="e big-tag">E</h5>
+          <h5 className="b big-tag">B</h5>
+          <h5 className="strip big-tag">-</h5>
+          <h5 className="d big-tag">D</h5>
+          <h5 className="e2 big-tag">E</h5>
+          <h5 className="v big-tag">V</h5>
         </div>
       </div>
 
-      <div className="tw-flex tw-justify-start tw-w-full tw-px-12">
+      <div className="tw-flex tw-justify-start tw-w-full tw-px-12 tw-overflow-hidden">
         <div className="tw-w-[480px] tw-text-[24px] jumbotron-desc-wrapper">
           <div className="tw-relative tw-overflow-hidden">
-            <p
-              className={`${BarlowCondensed.className} desc-jumbotron1 tw-top-14 tw-text-white`}
-            >
-              With years of <span className="tw-text-black">experience</span>, I
-              specialize in{" "}
-              <span className="tw-text-black">creating dynamic</span> and{" "}
-              <span className="tw-text-black">
-                user-friendly web solutions.
-              </span>
-            </p>
+            <div className={`suisse-font tw-top-14 tw-text-black`}>
+              <div className="tw-overflow-hidden">
+                <p className="desc-jumbotron1 desc1">
+                  With years of experience, I specialize
+                </p>
+              </div>
+              <div className="tw-overflow-hidden">
+                <p className="desc-jumbotron1 desc2">
+                  creating dynamic and user-friendly web
+                </p>
+              </div>
+              <div className="tw-overflow-hidden">
+                <p className="desc-jumbotron1 desc3">solutions.</p>
+              </div>
+            </div>
           </div>
-          <div
-            className={`${BarlowCondensed.className} tw-relative tw-overflow-hidden`}
-          >
+          {/* <div className={`suisse-font tw-relative tw-overflow-hidden`}>
             <p className="desc-jumbotron2 tw-top-14 tw-text-white">
               {"Let's build something amazing together!"}
             </p>
-          </div>
+          </div> */}
           {/* <p className="tw-text-white tw-relative">
             I excel in collaborating with product managers and UI/UX designers
             to deliver projects that meet requirements and optimize system

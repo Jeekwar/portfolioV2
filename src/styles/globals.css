@@ -8,6 +8,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Suisse Int'l";
+  src: url("../../public/assets/fonts/suisseintl-regular_0.otf")
+    format("opentype");
+  /* Add additional font formats if necessary */
+  /* Specify the correct path to the font files */
+}
+
 @layer base {
   /* * {
     background-color: #f6f6f6;
@@ -78,21 +86,24 @@
 /* custom  */
 /* ... ....  ... */
 
-.navbar-wrapper,
-.jumbotron {
+.navbar-wrapper {
   color: white;
   text-decoration: none;
 }
 
-.jumbotron,
-.desc-jumbotron1,
-.desc-jumbotron2 {
+.jumbotron-desc-wrapper {
+  opacity: 0;
+  transform: translateY(4rem);
+}
+
+.jumbotron {
   position: relative;
   opacity: 0;
+  transform: translateY(8rem);
 }
 
 h5 {
-  font-size: 16vw;
+  font-size: 20vw;
 }
 
 .navbar-wrapper {
@@ -116,7 +127,7 @@ h1 {
 }
 
 .content-wrapper {
-  display: none;
+  height: 0;
 }
 
 .anton-font {
@@ -150,6 +161,10 @@ h1 {
 }
 .works-item {
   color: #b3bfce;
+}
+
+.suisse-font {
+  font-family: "Suisse Int'l";
 }
 
 /* img {
