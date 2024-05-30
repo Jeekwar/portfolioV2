@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -137,40 +138,91 @@ h1 {
   opacity: 0;
 }
 
-.scroll-arrow1,
-.scroll-arrow2 {
-  position: relative;
-  top: -24px;
-}
-
 /* works section */
 
 .work-title {
   transform: translateY(8rem);
 }
 
-.works-items {
-  width: 80%;
+.work-item {
+  font-family: "Alfa ";
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #b3bfce 50%, #242424 50%);
+  background-size: 100% 200%;
+  background-position: bottom left;
+  transition: all 0.3s ease-out;
+  color: #b3bfce;
+  align-items: center;
+  cursor: pointer;
+}
+
+.work-item:hover {
+  background-position: top left;
+  color: #242424;
+}
+
+/* .works-items {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
   margin: auto;
-  font-family: "Fjalla One";
   color: antiquewhite;
 }
+
 .works-item {
   color: #b3bfce;
-}
+  height: 4rem;
+} */
 
 .suisse-font {
   font-family: "Suisse Int'l";
 }
 
-/* img {
+.badge-wrapper {
+  padding: 2px 6px 2px 6px;
+  border-radius: 40px;
+  border: 2px solid white;
+}
+
+.stack-wrapper {
+  height: 0;
+}
+
+/* 
+.preview {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 26rem;
+  height: 20rem;
+  z-index: 9;
+  pointer-events: none;
+}
+
+.preview-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+} */
+
+/* .preview-img-2 {
+  top: 20%;
+  left: 20px;
+} */
+
+/* .preview-img img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+} */
+
+/* .bg-items-1 {
+  position: absolute;
   height: 100%;
   width: 100%;
-  object-fit: cover;
-  filter: grayscale(85%);
+  background: red;
+  z-index: 2;
 } */
 
 /* .jeekwar-wrapper {

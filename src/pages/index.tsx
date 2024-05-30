@@ -1,9 +1,11 @@
 import Jumbotron from "@/components/organism/Jumbotron";
 import Navbar from "@/components/organism/Navbar";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import { Work } from "@/components/organism/Work";
+import { Stack } from "@/components/organism/Stack";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger, useGSAP);
@@ -250,49 +252,12 @@ export default function Home() {
 
   return (
     <main ref={main}>
-      <div className="tw-bg-[#b3bfce] tw-h-screen tw-fixed tw-w-full"></div>
       <Navbar />
-      <Jumbotron />
-
-      <div className="tw-bg-[#b3bfce] tw-relative tw-z-[2] ">
-        <div className="tw-bg-[#242424] tw-relative tw-z-[2] content-wrapper lg:tw-w-[95%] tw-m-auto tw-rounded-xl tw-overflow-hidden lg:tw-px-4">
-          <div className="tw-absolute tw-w-full tw-z-[9] tw-flex tw-flex-col tw-gap-[10rem]">
-            <div className="tw-flex tw-justify-start-start tw-w-full tw-pt-16 work-title-wrapper tw-overflow-hidden tw-mx-4">
-              <h2
-                className={` tw-text-[#b3bfce] tw-text-5xl tw-font-['Anton'] tw-text-[12vw] work-title`}
-              >
-                C
-              </h2>
-              <h2
-                className={`tw-text-[#b3bfce] tw-text-5xl tw-font-['Anton'] tw-text-[12vw] work-title`}
-              >
-                O
-              </h2>
-              <h2
-                className={` tw-text-[#b3bfce] tw-text-5xl tw-font-['Anton'] tw-text-[12vw] work-title`}
-              >
-                R
-              </h2>
-              <h2
-                className={`tw-text-[#b3bfce] tw-text-5xl tw-font-['Anton'] tw-text-[12vw] work-title`}
-              >
-                E
-              </h2>
-            </div>
-            <div className="works-items">
-              <hr />
-              <div className="works-item">
-                <p>Item Name</p>
-              </div>
-              <hr />
-              <div className="works-item">
-                <p>Item Name</p>
-              </div>
-              <hr />
-            </div>
-          </div>
-        </div>
+      <div className="tw-bg-[#b3bfce] tw-h-screen tw-w-full">
+        <Jumbotron />
       </div>
+      <Work />
+      <Stack />
     </main>
   );
 }

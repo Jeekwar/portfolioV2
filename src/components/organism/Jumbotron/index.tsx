@@ -80,16 +80,8 @@ const Jumbotron = () => {
       </div>
       <div className="tw-w-full tw-flex tw-justify-end tw-relative tw-pr-[6rem]">
         <div className="scroll-wrapper tw-flex tw-flex-col tw-items-center tw-gap-2">
-          <div
-            className="tw-border-2 tw-border-[#fff] tw-flex tw-justify-center tw-items-center tw-rounded-3xl tw-p-2 tw-px-8"
-            onMouseEnter={() => setMouseEnter(true)}
-            onMouseLeave={() => setMouseEnter(false)}
-          >
-            <p className="tw-text-black">Scroll down</p>
-          </div>
-          <div className="tw-h-7 tw-overflow-hidden">
-            <IconArrowNarrowDown color="white" className="scroll-arrow1 " />
-            <IconArrowNarrowDown color="white" className="scroll-arrow2 " />
+          <div className=" tw-border-[#fff] tw-flex tw-justify-center tw-items-center">
+            <p className="tw-text-black">{`(( Scroll ))`}</p>
           </div>
         </div>
       </div>
