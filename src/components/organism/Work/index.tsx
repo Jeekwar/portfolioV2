@@ -10,18 +10,18 @@ const BarlowCondensed = Barlow_Condensed({ subsets: ["latin"], weight: "400" });
 
 export const Work = () => {
   const imgSource = [
-    "/assets/img/kelas-pintar.png",
-    "/assets/img/elegant-cozy-office-with-laptop.jpg",
+    "/assets/img/kelas-pintar-preview.png",
+    "/assets/img/anelist.png",
   ];
 
   const removeExtraImages = (container: any) => {
-    while (container.children.length > 10) {
+    while (container?.children.length > 10) {
       container.removeChild(container.firstChild);
     }
   };
 
   const appendImages = (src: string) => {
-    const preview1 = document.querySelector(".preview-img-1");
+    const preview1 = document.querySelector(".preview-img");
     // const preview2 = document.querySelector(".preview-img-2");
 
     const img1 = document.createElement("img");
@@ -38,7 +38,7 @@ export const Work = () => {
 
     gsap.to([img1], {
       clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
-      duration: 1,
+      duration: 0.5,
       ease: "power3.out",
       onComplete: () => {
         removeExtraImages(preview1);
@@ -52,18 +52,6 @@ export const Work = () => {
   // };
 
   useEffect(() => {
-    // document.querySelectorAll(".works-item").forEach((item, index) => {
-    //   item.addEventListener("mouseover", () => {
-    //     appendImages(imgSource[index]);
-    //   });
-    // });
-    // document.querySelector(".works-items")?.addEventListener("mouseout", () => {
-    //   gsap.to(".preview-img img", {
-    //     clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
-    //     duration: 1,
-    //     ease: "power3.out",
-    //   });
-    // });
     // document.addEventListener("mousemove", function (e) {
     //   const preview = document.querySelector(".preview");
     //   gsap.to(preview, {
@@ -141,9 +129,26 @@ export const Work = () => {
               T
             </h2>
           </div>
-          <div className="work-items tw-flex tw-flex-col">
-            <hr />
-            <div className="work-item work-item-1 tw-py-3 tw-px-2">
+          <div className="preview">
+            <div className="preview-img"></div>
+          </div>
+          <div
+            className="work-items tw-flex tw-flex-col tw-justify-between"
+            onMouseOut={() => {
+              gsap.to(".preview-img img", {
+                clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
+                duration: 0.5,
+                ease: "power3.out",
+              });
+            }}
+          >
+            <hr className="tw-mt-[6rem]" />
+            <div
+              className="work-item work-item-1 tw-py-3 tw-px-2"
+              onMouseEnter={() => {
+                appendImages(imgSource[0]);
+              }}
+            >
               <div>
                 <p
                   className={`tw-text-[1.6rem] tw-font-bold ${BebasNeue.className}`}
@@ -152,14 +157,19 @@ export const Work = () => {
                 </p>
                 <p className={`suisse-font tw-text-xs`}>June 2024 - Present</p>
               </div>
-              <div className="tw-w-1/2">
+              <div className="tw-w-3/5">
                 <p className={`tw-text-justify suisse-font`}>
                   {`As a developer, I collaborated with UI/UX designers to create a user-friendly product using the Next.js framework and worked with Backend, DevOps, QA, and the Project Manager to prioritize the technical backlog. I ensured effective, understandable code and validated requirements with the Product Manager to select appropriate technologies. This collaborative effort led to a successful revamp completed in September 2023, including bug fixes and usability testing.`}
                 </p>
               </div>
             </div>
             <hr />
-            <div className="work-item work-item-2 tw-py-3 tw-px-2">
+            <div
+              className="work-item work-item-2 tw-py-3 tw-px-2"
+              onMouseEnter={() => {
+                appendImages(imgSource[1]);
+              }}
+            >
               <div>
                 <p
                   className={`tw-text-[1.6rem] tw-font-bold ${BebasNeue.className}`}
@@ -168,7 +178,7 @@ export const Work = () => {
                 </p>
                 <p className={`suisse-font tw-text-xs`}>April 2019 - 2022</p>
               </div>
-              <div className="tw-w-1/2">
+              <div className="tw-w-3/5">
                 <p className={`tw-text-justify suisse-font`}>
                   {`I created and designed a web-based solution to meet the client's specific needs, enhancing their ideas to optimize the user interface and experience. Using HTML, JavaScript, CSS, PHP, and MySQL, I conducted end-to-end development for e-commerce websites, from planning to launch. After launching, I delivered the project to the client, performed usability testing, and fixed any bugs.`}
                 </p>
